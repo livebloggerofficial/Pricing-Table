@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.pricing-container {
+  background: #023047;
+}
+
+.pricing-container .content {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 50px 32px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.pricing-container h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.pricing-container .left {
+  flex: 1;
+}
+
+.pricing-container .right {
+  flex: 2;
+  display: flex;
+  gap: 30px;
+}
+
+.pricing-container .right .card {
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 24px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-container .top {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pricing-container .price {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  height: 100px;
+}
+
+.pricing-container .price .per {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.pricing-container .points ul {
+  padding: 20px;
+  padding-top: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.pricing-container .points {
+  flex: 1;
+}
+
+.pricing-container .quote {
+  font-size: 24px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+
+.pricing-container .btn {
+  background: #023047;
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 32px;
+  cursor: pointer;
+}
+
+.pricing-container .btn:hover {
+  background: #000;
+}
+
+.pricing-container .btn.light {
+  background: #eee;
+  color: #000;
+}
+
+.pricing-container .btn.light:hover {
+  background: #ddd;
+}
+
+@media (max-width: 900px) {
+  .pricing-container .content {
+    flex-direction: column;
+  }
+
+  .pricing-container p {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-container .right {
+    flex-direction: column;
+    width: 100%;
+  }
+}
